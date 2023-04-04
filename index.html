@@ -12,23 +12,25 @@
     <h1>Test</h1>
     <div>
         <label for="nameValueInput">Name/Value Pair</label> <br>
-        <input type="text" id="nameValueInput" placeholder="Type your name/value pair" size="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="nameValueInput" placeholder="Type your name/value pair in format <name>=<value>"
+            size="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button id="addButton">Add</button>
     </div><br>
     <table>
         <tr>
             <td>
                 <label for="nameValueList">Name/Value Pair List</label><br>
-                <textarea style="resize: none;" id="nameValueList" placeholder="Here will be your list" rows="20" cols="49" readonly></textarea>
+                <select style="width: 383px; overflow: hidden;" id="nameValueList" multiple size="20"></select>
             </td>
             <td style="display: block;">
-                <button id="addButton1" style="margin: 20px 0px 15px 30px;" >Sort by Name</button><br>
-                <button id="addButton1" style="margin: 0px 0px 20px 30px;">Sort by Value</button><br>
-                <button id="addButton2" style="margin: 0px 0px 20px 30px;">Delete</button><br>
-                <button id="addButton3" style="margin: 0px 0px 0px 30px;">Show XML</button>
+                <button id="sortByNameButton" style="margin: 20px 0px 15px 30px;">Sort by Name</button><br>
+                <button id="sortByValueButton" style="margin: 0px 0px 20px 30px;">Sort by Value</button><br>
+                <button id="deleteButton" style="margin: 0px 0px 20px 30px;">Delete</button><br>
+                <button id="showAsXMLButton" style="margin: 0px 0px 0px 30px;">Show XML</button>
             </td>
         </tr>
     </table>
+    <script src="index.js"></script>
 </body>
 
 </html>
