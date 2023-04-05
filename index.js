@@ -16,9 +16,8 @@ const nameValueRegex = /^([a-zA-Z0-9]+)\s*=\s*([a-zA-Z0-9]+)$/;
 
 function addNameValuePair() {
   const input = nameValueInput.value.trim();
-  const match = input.match(nameValueRegex);
   nameValueInput.value = '';
-  if (match !== null) {
+  if (input.match(nameValueRegex) !== null) {
     const option = document.createElement('option');
     option.text = input;
     nameValueList.add(option);
